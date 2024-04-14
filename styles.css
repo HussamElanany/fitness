@@ -1,0 +1,231 @@
+h3 {
+    text-align: center;
+    margin: 30px auto !important;
+    width: fit-content;
+    border-bottom: 3px solid greenyellow;
+}
+
+p {
+    width: 70%;
+    margin: 5px auto;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto !important;
+    display: block;
+}
+
+/* nav bar*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-css {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: greenyellow 1px solid;
+}
+
+.burger {
+    display: none;
+    /* Hide burger menu by default */
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Show burger menu on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        /* Adjust as needed */
+        left: 0;
+        background-color: #333;
+        padding: 20px;
+        border-bottom: 1px solid #fff;
+        z-index: 10;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+        /* Show burger menu */
+    }
+
+    /* Rotate burger menu icon on toggle */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+
+/* Portofolio sec*/
+.portfolio-images,
+.rating-cards {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.image-card {
+    flex: 0 0 auto;
+    width: 33.33%;
+    /* Display 3 cards at a time */
+    padding: 0 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.image-details h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.image-details p {
+    font-size: 14px;
+}
+
+.scroll-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.scroll-buttons button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.scroll-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Rating sec*/
+
+.rating-sec {
+    padding: 20px;
+}
+
+.scroll-buttons button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.scroll-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.checked {
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    .image-card {
+        flex: 0 0 auto;
+        width: 105%;
+        /* Display 3 cards at a time */
+        padding: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*Footer sec*/
+footer {
+    border-top: 1px greenyellow solid;
+}
+
+.copy-right-sec {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copy-right-sec p {
+    margin: 0;
+    font-size: 14px;
+}
