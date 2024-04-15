@@ -48,19 +48,18 @@ document.querySelector('.prev-btn').addEventListener('click', function () {
     });
 });
 // About section
+
 const readMoreLink = document.getElementById('read-more-link');
 const readLessLink = document.getElementById('read-less-link');
 const additionalParagraphs = document.querySelector('.additional-paragraphs');
 
-readMoreLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+readMoreLink.addEventListener('click', () => {
     additionalParagraphs.style.display = 'block';
     readMoreLink.style.display = 'none';
     readLessLink.style.display = 'inline';
 });
 
-readLessLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+readLessLink.addEventListener('click', () => {
     additionalParagraphs.style.display = 'none';
     readMoreLink.style.display = 'inline';
     readLessLink.style.display = 'none';
