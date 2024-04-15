@@ -1,13 +1,24 @@
+/* Import */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+
+}
+
 h3 {
     text-align: center;
     margin: 30px auto !important;
     width: fit-content;
-    border-bottom: 3px solid greenyellow;
+    border-bottom: 3px solid goldenrod;
 }
 
 p {
     width: 70%;
     margin: 5px auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 hr {
@@ -16,17 +27,23 @@ hr {
     display: block;
 }
 
-/* nav bar*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.toPages {
+    text-decoration: none;
+    color: black;
 }
+
+.toPages:hover {
+    cursor: pointer;
+    color: #007bff;
+}
+
+/* nav bar*/
 
 .navbar-css {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(68, 64, 64);
     color: #fff;
     padding: 10px 20px;
     margin: 0 !important;
@@ -48,9 +65,15 @@ body {
 }
 
 .nav-links a {
+
     text-decoration: none;
     color: #fff;
-    border-bottom: greenyellow 1px solid;
+    border-bottom: goldenrod 1px solid;
+}
+
+.nav-links a:hover {
+    padding-bottom: 5px;
+    border-bottom: goldenrod 4px solid;
 }
 
 .burger {
@@ -214,7 +237,7 @@ body {
 
 /*Footer sec*/
 footer {
-    border-top: 1px greenyellow solid;
+    border-top: 1px goldenrod solid;
 }
 
 .copy-right-sec {

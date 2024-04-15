@@ -1,3 +1,4 @@
+// Navbar section
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 const navBar = document.querySelector('.navbar');
@@ -29,13 +30,7 @@ window.addEventListener('resize', function () {
     }
 });
 
-
-
-
-
-
-
-
+// portofolio section 
 
 document.querySelector('.next-btn').addEventListener('click', function () {
     const container = document.querySelector('.portfolio-images');
@@ -52,7 +47,27 @@ document.querySelector('.prev-btn').addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+// About section
+const readMoreLink = document.getElementById('read-more-link');
+const readLessLink = document.getElementById('read-less-link');
+const additionalParagraphs = document.querySelector('.additional-paragraphs');
 
+readMoreLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    additionalParagraphs.style.display = 'block';
+    readMoreLink.style.display = 'none';
+    readLessLink.style.display = 'inline';
+});
+
+readLessLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    additionalParagraphs.style.display = 'none';
+    readMoreLink.style.display = 'inline';
+    readLessLink.style.display = 'none';
+});
+
+
+//  Rating section
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.next-btn-rate').addEventListener('click', function () {
